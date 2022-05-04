@@ -14,3 +14,6 @@ FETCH: Es el comando que le dice a tu git local que recupere la última informac
 PULL: El comando git pull se emplea para extraer y descargar contenido desde un repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido. La fusión de cambios remotos de nivel superior en tu repositorio local es una tarea habitual de los flujos de trabajo de colaboración basados en Git.
 
 PUSH: El comando git push se usa para cargar contenido del repositorio local a un repositorio remoto. El envío es la forma de transferir confirmaciones desde tu repositorio local a un repositorio remoto.
+
+
+Soy el comentario de Harsh y apruebo este cambio.

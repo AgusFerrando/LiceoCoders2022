@@ -1,0 +1,5 @@
+Pasos que seguimos para clonar y hacer comentarios sobre un repositorio externo
+1. Compartimos links del archivo de github
+2. Luego desde el github desktop clonamos el repositorio de la pareja
+3. Una vez teniendo el mismo en mi ordenador, fui a la carpeta donde se encuentra guardado, ingrese al acrhivo de texto e hice las modificaciones
+4. Una vez hecha las modificaciones, utilice el comando commit en mi github desktop y luego el push para compartirlo.

@@ -1,0 +1,28 @@
+table{
+    height: 150px;
+}
+
+td {
+    width: 100px;
+    border: 1px solid black;
+}
+
+.celda1{
+    background-color: lightcyan;
+}
+
+.celda2{
+    background-color: lightskyblue;
+}
+
+.celda3{
+    background-color: lightblue;
+}
+
+.celda4{
+    background-color: blue;
+}
+
+.celda5{
+    background-color: darkblue;
+}

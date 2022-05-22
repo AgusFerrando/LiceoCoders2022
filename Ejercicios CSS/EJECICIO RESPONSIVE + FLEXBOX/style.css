@@ -1,0 +1,133 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav2{
+    display: flex;
+    flex-direction: row;
+    background-color: maroon;
+    border: 1pz solid black;
+}
+
+.nav2 li{
+  
+  color: white;
+  text-decoration:none;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: width 2s;
+}
+
+.nav2 li:hover{
+    background-color: bisque;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 200px;
+}
+
+.main1{
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 15%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 16px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1{
+    background-color: maroon;
+    opacity: 70%;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 2000px){
+
+.nav{
+    width: 100%;
+    height: 300px;
+}
+
+.nav2{
+    justify-content: flex-end;
+    row-gap: 30px;
+}
+
+.nav2 li{
+    font-size: 35px;
+    padding: 30px;
+    padding-right: 80px;
+}
+
+.nav2 li:hover{
+    font-size: 25px;
+    width: 200px;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+}
+
+.main1{
+    width: 45%;
+    height: 100%;
+}
+
+.footer1{
+    width: 33%;
+    height: 200px;
+}
+}
+
+@media only screen and (max-width: 992px){
+    
+.nav{
+    width: 100%;
+    height: 150px;
+}
+
+nav2{
+    justify-content: flex-end;
+    row-gap: 30px;
+}
+
+.nav2 li{
+    font-size: 25px;
+    padding: 30px;
+    padding-right: 80px;
+}
+
+}
+
+@media only screen and (max-width: 768px){
+
+.nav{
+    width: 100%;
+    height: 15%;
+}
+}
+
+@media only screen and (max-width: 600px){
+
+.nav{
+    width: 100%;
+    height: 15%;
+}
+
+}

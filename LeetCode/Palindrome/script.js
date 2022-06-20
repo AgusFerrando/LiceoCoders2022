@@ -1,3 +1,4 @@
+
 var isPalindrome = function(x) {
     let num = x.toString();
     let numInverso = "";
@@ -14,3 +15,6 @@ var isPalindrome = function(x) {
         return true;
     } else return false;
 };
+
+
+console.log(isPalindrome(343));

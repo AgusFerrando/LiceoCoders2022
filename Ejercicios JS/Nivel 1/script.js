@@ -1,7 +1,8 @@
 // ejercicio 13
 
 function IMC(peso, altura){
-    let indiceMC = peso / Math.pow(altura, 2);
+    let calculo = peso / Math.pow(altura, 2);
+    let indiceMC = calculo.toFixed(2);
     console.log(indiceMC);
 
     if(indiceMC > 30){
@@ -15,7 +16,7 @@ function IMC(peso, altura){
     }
 }
 
-console.log(IMC(60, 1.68));
+console.log(IMC(52, 1.67));
 
 // ejercicio 15
 

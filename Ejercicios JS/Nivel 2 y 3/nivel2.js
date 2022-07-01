@@ -65,14 +65,96 @@ console.log(capitalizeArray);
 
 //ejercicio 8
 
-function addItem(i){
-    let arr=[];
-    arr.push(i);
+function addItem(arr, val){
+    arr.push(val);
     return arr;
 }
 
-console.log(addItem(3));
+console.log(addItem([1,2], 3));
 
+// ejercicio 9
+
+const removeItem = (arr, val) => {
+    let index = arr.indexOf(val)
+    if (index > -1) {
+        arr.splice(index, 1)
+    }
+    return arr
+}
+
+console.log(removeItem([1,2,3], 2));
+
+
+
+// ejercicio 10
+
+function sumOfNumbers(arr){
+    let suma = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+    suma += arr[i];
+    }
+    return suma;
+}
+
+console.log(sumOfNumbers([2,3,4]));
+
+
+// ejercicio 11
+
+function sumOfOdds(arr){
+    let newArr= [];
+    for( let i=0; i < arr.length; i++){
+        if (arr[i]%2 !== 0){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+
+console.log(sumOfOdds([2,3,4,5]));
+
+// ejercicio 12
+
+function sumOfEven(arr){
+    let newArr= [];
+    for( let i=0; i < arr.length; i++){
+        if (arr[i]%2 == 0){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+
+console.log(sumOfEven([2,3,4,5]));
+
+// ejercicio 13
+
+function evenAndOdds(n){
+    let even=[];
+    let odds= [];
+    for( let i=0; i <= n; i++){
+        if (i%2 == 0){
+            even.push(i);
+        } else odds.push(i);
+        }       
+        return even, odds;
+}
+console.log(evenAndOdds(6));
+
+
+
+//ejercicio 14
+
+function sumOfArgs(nums){
+    let total="";
+    for (i=0; i<nums.length; i++){
+        total += parseFloat(nums[i]);
+    }
+    return total;
+}
+
+console.log(sumOfArgs(1,2,3));
 
 // ejercicio 17
 

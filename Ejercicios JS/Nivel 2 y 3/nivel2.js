@@ -147,9 +147,9 @@ console.log(evenAndOdds(6));
 //ejercicio 14
 
 function sumOfArgs(nums){
-    let total="";
+    let total=0;
     for (i=0; i<nums.length; i++){
-        total += parseFloat(nums[i]);
+        total = total + parseFloat(nums[i]);
     }
     return total;
 }
@@ -166,3 +166,5 @@ const randomHexaNumberGenerator = () => {
   console.log(randomHexaNumberGenerator());
   console.log(randomHexaNumberGenerator());
   console.log(randomHexaNumberGenerator());
+
+ 

@@ -1,0 +1,13 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "```bash\r npm init -y",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

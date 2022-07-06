@@ -1,4 +1,38 @@
+// ejercicio 1
 
+function userIdGenerator1(idLength){
+  const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result= "";
+  const charactersLength = characters.length;
+  for ( let i = 0; i < idLength; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+
+function userIdGeneratedByUser(){
+  let numOfIdsString = prompt("insert Number of Ids to be generate:")
+  let idsLengthString = prompt("insert the id's length you want")
+  
+  let numOfIdsNumber = new Number(numOfIdsString).valueOf();
+  
+  let idsLengthNumber = new Number(idsLengthString).valueOf();
+
+  let ids = []
+
+  for (let i = 0; i < numOfIdsNumber; i++) { 
+    
+    ids.push(userIdGenerator1(idsLengthNumber))
+    
+  };
+  return ids;
+
+}
+
+console.log(userIdGeneratedByUser())
+  
+  
+  
   //ejercicio 8
 
 function suffleArray(arr){
@@ -133,3 +167,29 @@ console.log(isPrime(13));
 
 // ejercicio 16
 
+function isUnique(arr){
+  let newArr= arr.sort()
+  for (let i=0; i<newArr.length; i++){
+      if(newArr[i] == newArr[i+1]){
+        return 'Hay elementos repetidos';
+      } else return arr;
+  }
+}
+
+console.log(isUnique([1,2,3,4]));
+console.log(isUnique([1,2,2,4])); //revisar
+
+
+
+// ejercicio 17
+
+// function tipeOfData(arr){
+//   for (let i=0; i<arr.length; i++){
+//     if( tipeof arr[i] == tipeof arr[i+1]){
+//       return 'Hay elementos diferentes';
+//     } else return arr;
+//   }
+// }
+
+// console.log(tipeOfData([1,2,3]));
+// console.log(tipeOfData([1,a,b]));

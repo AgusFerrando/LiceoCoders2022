@@ -167,4 +167,19 @@ const randomHexaNumberGenerator = () => {
   console.log(randomHexaNumberGenerator());
   console.log(randomHexaNumberGenerator());
 
- 
+ // ejercicio 18
+
+ function userIdGenerator(){
+    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result= "";
+    const charactersLength = characters.length;
+    for ( let i = 0; i < 7; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
+
+console.log(userIdGenerator());
+console.log(userIdGenerator());
+console.log(userIdGenerator());

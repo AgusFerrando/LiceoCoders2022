@@ -181,15 +181,35 @@ console.log(isUnique([1,2,2,4])); //revisar
 
 
 
-// ejercicio 17
+//ejercicio 17
 
-// function tipeOfData(arr){
-//   for (let i=0; i<arr.length; i++){
-//     if( tipeof arr[i] == tipeof arr[i+1]){
-//       return 'Hay elementos diferentes';
-//     } else return arr;
+function tipeOfData(arr){
+  for (let i=0; i<arr.length; i++){
+    let type1= typeof arr[i];
+    let type2= typeof arr[i+1];
+    if( type1 !== type2){
+      return 'Hay elementos diferentes';
+    } return arr;
+  }
+}
+
+console.log(tipeOfData([1,2,3]));
+console.log(tipeOfData([1,"a","b"]));
+
+
+// ejercicio 18
+// function sieteNumeros(){
+//   let arr=[];
+//   let length= 7
+//   for (let i = 0; i < length; i++) {
+//     let index = Math.floor(Math.random() * length);
+//     if (index > 0 )
+//     arr.push(index);
 //   }
-// }
 
-// console.log(tipeOfData([1,2,3]));
-// console.log(tipeOfData([1,a,b]));
+//   return arr;  
+// }
+     
+// console.log(sieteNumeros());
+// console.log(sieteNumeros());
+// console.log(sieteNumeros());

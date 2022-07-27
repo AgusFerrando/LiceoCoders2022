@@ -197,7 +197,7 @@ console.log(tipeOfData([1,2,3]));
 console.log(tipeOfData([1,"a","b"]));
 
 
-// ejercicio 18
+// ejercicio 19
 // function sieteNumeros(){
 //   let arr=[];
 //   let length= 7
